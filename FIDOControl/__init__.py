@@ -1,0 +1,1 @@
+from .FIDOBase import FIDOMove
