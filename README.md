@@ -1,2 +1,0 @@
-# FIDO
-Object detection robot
