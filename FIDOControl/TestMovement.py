@@ -1,15 +1,22 @@
 from FIDOControl import FIDOMove
-
+import time
 
 fido = FIDOMove()
 
 fido.setup()
 
-fido.move('forward', None)
-fido.move('backward', None)
-fido.move('forward', 'left')
-fido.move('forward', 'right')
-fido.move('backward', 'left')
-fido.move('backward', 'left')
+
+fido.move(100, 'no', 1)
+time.sleep(2.5)
+fido.move(-100, 'no', 1)
+time.sleep(2.5)
+fido.move(100, 'left', 0.6)
+time.sleep(5)
+print('1')
+
+fido.move(100, 'right', 0.6)
+time.sleep(5)
+fido.move(0, 'left', 1)
+time.sleep(5)
 fido.destroy()
 
