@@ -85,7 +85,7 @@ class FIDOMove:
                 pwm_A.ChangeDutyCycle(speed)
         return direction
 
-    def move(self, direction, turn, radius=0.6):  # 0 < radius <= 1
+    def move(self, speed, direction, turn, radius=0.6):  # 0 < radius <= 1
         speed = 100
         if direction == 'forward':
             if turn == 'left':
